@@ -734,18 +734,32 @@
              submit(e){
                this.status = 'loading';
                const data = new FormData(e.target);
-               if(!data.get('name') || !data.get('phone')){ this.status = 'error'; return; }
-               // NOTE: replace this timeout with a real POST to your backend / form
-               // service (e.g. Formspree, a serverless function, or your CRM's API).
-               // This demo simulates the network call so the loading/success states are visible.
-               setTimeout(() => { this.status = 'success'; e.target.reset(); }, 900);
+               const name = data.get('name')?.trim();
+               const phone = data.get('phone')?.trim();
+               const email = data.get('email')?.trim();
+               const project = data.get('project_type')?.trim();
+               const message = data.get('message')?.trim();
+
+               if(!name || !phone){
+                 this.status = 'error';
+                 return;
+               }
+
+               const text = `Hello NOSHAHI STEEL WORKS,%0A%0AI'd like a free quote for my project.%0A%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email || 'N/A'}%0AProject Type: ${project}%0AMessage: ${message || 'N/A'}`;
+               const url = `https://wa.me/923004456197?text=${encodeURIComponent(text)}`;
+               window.open(url, '_blank');
+
+               setTimeout(() => {
+                 this.status = 'success';
+                 e.target.reset();
+               }, 400);
              }
            }">
         <h3 class="font-display text-xl text-[#1E293B] mb-1">REQUEST A FREE QUOTE</h3>
         <p class="text-slate-500 text-sm mb-6">We'll get back to you fast — for urgent jobs, WhatsApp or call us directly, 24/7.</p>
 
         <div x-show="status==='success'" x-cloak role="status" aria-live="polite" class="mb-4 border border-green-300 bg-green-50 text-green-800 text-sm px-4 py-3">
-          Thanks — your request was sent. We'll be in touch shortly.
+          Thanks — your request was opened in WhatsApp. Send the message there to complete your quote request.
         </div>
         <div x-show="status==='error'" x-cloak role="alert" aria-live="assertive" class="mb-4 border border-red-300 bg-red-50 text-red-700 text-sm px-4 py-3">
           Please fill in your name and phone number before sending.
