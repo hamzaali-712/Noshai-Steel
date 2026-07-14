@@ -394,28 +394,145 @@
 </section>
 
 <!-- ================= PORTFOLIO ================= -->
-<section id="portfolio" class="py-24 bg-white" x-data="{lightbox:null, imgs:[
-  {src:'https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80', t:'Structural Frame Installation'},
-  {src:'https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7?auto=format&fit=crop&w=900&q=80', t:'Custom Security Gate'},
-  {src:'https://images.unsplash.com/photo-1517502884422-41eaead166d4?auto=format&fit=crop&w=900&q=80', t:'Industrial Welding Bay'},
-  {src:'https://images.unsplash.com/photo-1461988091159-192b6df7054f?auto=format&fit=crop&w=900&q=80', t:'Steel Railing Detail'},
-  {src:'https://images.unsplash.com/photo-1487958449943-2429e8be8625?auto=format&fit=crop&w=900&q=80', t:'Warehouse Steel Shed'},
-  {src:'https://images.unsplash.com/photo-1590959651373-a3db0f38a961?auto=format&fit=crop&w=900&q=80', t:'Finished Structural Beam'}
-]}">
+<section id="portfolio" class="py-24 bg-white" x-data="{lightbox:null, albumOpen:true, allImages:[
+  {file:'WhatsApp Image 2026-07-15 at 00.12.07 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.07 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.07.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.08 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.08 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.08 (3).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.08.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.09 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.09.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.11 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.11.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.13.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.14 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.14 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.14.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.16 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.16.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.17 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.17 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.17 (3).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.17.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.18 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.18.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.39.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.40 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.40 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.40.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.41 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.41.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.42 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.42 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.42.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.43 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.43.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.44 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.44.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.45 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.45.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.46 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.46 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.46.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.47 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.47.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.51 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.51.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.52 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.52 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.52 (3).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.52.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.53.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.54 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.54.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.55 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.55 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.55.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.56 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.56.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.57 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.57.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.58 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.58 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.58.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.12.59.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.00 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.00.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.01 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.01.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.02 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.02.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.03 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.03.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.04 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.04.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.05 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.05 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.05.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.06 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.06 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.06.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.07 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.07 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.07.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.08 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.08 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.08.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.09 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.09 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.09.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.10 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.10 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.10 (3).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.10.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.11 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.11.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.12 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.12 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.12.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.13 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.13 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.13.13.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.14.59.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.00 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.00.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.01 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.01.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.02 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.02.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.03 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.03 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.03.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.04 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.04 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.04.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.05 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.05 (2).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.05.jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.06 (1).jpeg'},
+  {file:'WhatsApp Image 2026-07-15 at 00.15.06.jpeg'}
+], imgs: []}" x-init="imgs = allImages.slice().sort((a,b)=>a.file.localeCompare(b.file))">
   <div class="max-w-7xl mx-auto px-5 md:px-8">
     <div class="flex items-end justify-between mb-12 flex-wrap gap-4 reveal">
       <div>
-        <span class="font-mono text-xs text-orange-500 tracking-[0.3em]">PORTFOLIO</span>
-        <h2 class="font-display text-3xl md:text-4xl text-[#1E293B] mt-3">RECENT WORK</h2>
+        <span class="font-mono text-xs text-orange-500 tracking-[0.3em]">PHOTO ALBUM</span>
+        <h2 class="font-display text-3xl md:text-4xl text-[#1E293B] mt-3">A–Z WORK GALLERY</h2>
       </div>
-      <p class="text-slate-500 text-sm max-w-sm font-mono">★ Gallery below uses placeholder industrial photography. Swap in your real Google Maps / jobsite photos here.</p>
+      <div class="flex items-center gap-3">
+        <p class="text-slate-500 text-sm max-w-sm font-mono">★ Browse the full workshop album below.</p>
+        <button @click="albumOpen = !albumOpen" type="button" class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-[#1E293B] hover:border-orange-500 hover:text-orange-500 transition">
+          <span x-text="albumOpen ? 'Hide Album' : 'Show Album'"></span>
+        </button>
+      </div>
     </div>
-    <div class="columns-1 sm:columns-2 lg:columns-3 gap-5 space-y-5">
+    <div x-show="albumOpen" x-cloak class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
       <template x-for="(img,i) in imgs" :key="i">
-        <div class="relative group overflow-hidden break-inside-avoid cursor-pointer" @click="lightbox=img" @keydown.enter="lightbox=img" tabindex="0" role="button" :aria-label="'View larger image: ' + img.t">
-          <img :src="img.src" :alt="img.t" width="900" height="600" loading="lazy" decoding="async" class="w-full object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="absolute inset-0 bg-gradient-to-t from-[#1E293B]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-5">
-            <span class="text-white font-semibold text-sm" x-text="img.t"></span>
+        <div class="relative group overflow-hidden cursor-pointer rounded-2xl border border-slate-200 bg-slate-50" @click="lightbox=img" @keydown.enter="lightbox=img" tabindex="0" role="button" :aria-label="'View larger image: ' + img.file">
+          <img :src="'docs/' + encodeURIComponent(img.file)" :alt="img.file" class="h-64 w-full object-cover transition-transform duration-500 group-hover:scale-105">
+          <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+            <span class="text-white text-xs font-semibold" x-text="img.file"></span>
           </div>
         </div>
       </template>
@@ -423,10 +540,10 @@
   </div>
 
   <!-- Lightbox -->
-  <div x-show="lightbox" x-cloak x-transition @click="lightbox=null" @keydown.escape.window="lightbox=null"
-       role="dialog" aria-modal="true" :aria-label="lightbox?.t"
+  <div x-show="lightbox" x-cloak x-transition.opacity.duration.200ms @click="lightbox=null" @keydown.escape.window="lightbox=null"
+       role="dialog" aria-modal="true" :aria-label="lightbox?.file"
        class="fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-6">
-    <img :src="lightbox?.src" :alt="lightbox?.t" @click.stop class="max-h-[85vh] max-w-4xl w-full object-contain">
+    <img :src="'docs/' + encodeURIComponent(lightbox?.file)" :alt="lightbox?.file" @click.stop class="max-h-[85vh] max-w-5xl w-full object-contain rounded-xl shadow-2xl">
     <button @click="lightbox=null" type="button" aria-label="Close image preview" class="absolute top-6 right-6 text-white"><i data-lucide="x" class="w-8 h-8"></i></button>
   </div>
 </section>
