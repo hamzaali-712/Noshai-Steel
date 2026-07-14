@@ -745,7 +745,15 @@
                  return;
                }
 
-               const text = `Hello NOSHAHI STEEL WORKS,%0A%0AI'd like a free quote for my project.%0A%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email || 'N/A'}%0AProject Type: ${project}%0AMessage: ${message || 'N/A'}`;
+               const text = `Hello NOSHAHI STEEL WORKS,
+
+I'd like a free quote for my project.
+
+Name: ${name}
+Phone: ${phone}
+Email: ${email || 'N/A'}
+Project Type: ${project}
+Message: ${message || 'N/A'}`;
                const url = `https://wa.me/923004456197?text=${encodeURIComponent(text)}`;
                window.open(url, '_blank');
 
